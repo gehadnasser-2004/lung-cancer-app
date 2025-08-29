@@ -1,14 +1,15 @@
 ---
-title: Streamlit Template Space
+title: Lung Cancer App
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Lung cancer prediction app using Machine Learning
+license: mit
 ---
 
 # Welcome to Streamlit!
