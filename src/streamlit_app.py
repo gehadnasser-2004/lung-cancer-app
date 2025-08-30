@@ -1,13 +1,13 @@
 import streamlit as st
 import pickle
 import numpy as np
-import os 
+
 
 # ----------------------------
 # تحميل الموديل
 # ----------------------------
-model_path = os.path.join(os.path.dirname(__file__), "..", "lung_cancer_model.pkl")
-model = pickle.load(open(model_path, "rb"))
+model = pickle.load(open("lung_cancer_model.pkl", "rb"))
+
 
 # ----------------------------
 # واجهة التطبيق
