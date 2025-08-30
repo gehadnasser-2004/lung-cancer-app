@@ -4,11 +4,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # ======================
 # Load Model
 # ======================
-with open("lung_cancer_model.pkl", "rb") as f:
+# المسار الصحيح للملف داخل فولدر src
+model_path = os.path.join(os.path.dirname(__file__), "lung_cancer_model.pkl")
+
+with open(model_path, "rb") as f:
     model = pickle.load(f)
 
 # ======================
