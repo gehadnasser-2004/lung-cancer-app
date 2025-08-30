@@ -3,10 +3,14 @@ import pickle
 import numpy as np
 
 
-# ----------------------------
-# تحميل الموديل
-# ----------------------------
-model = pickle.load(open("lung_cancer_model.pkl", "rb"))
+import os
+
+
+# المسار الصحيح للملف داخل فولدر src
+model_path = os.path.join(os.path.dirname(__file__), "lung_cancer_model.pkl")
+
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
 
 
 # ----------------------------
